@@ -42,8 +42,14 @@ public class GMIBank01 extends GMIBankBaseURL {
         customers = obj.readValue(response.asString(), Customer[].class);
 
         //1) Tüm Customer bilgilerini ekrana yazdırın.
+        // i-) fori ile
         for ( int i = 0; i<customers.length; i++)
         System.out.println(customers[i]);
+
+        // ii-) for each ile
+        /*for (Customer w:customers) {
+            System.out.println(w);
+        }*/
 
         //2) Tüm Customer SSN lerini ekrana yazdırın.
         for ( int i = 0; i<customers.length; i++)
